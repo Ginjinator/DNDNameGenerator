@@ -1,5 +1,6 @@
 import Races.*;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -29,12 +30,23 @@ public class Main {
             System.out.print("Enter the number corresponding to your race: ");
             int raceChoice = kb.nextInt();
             int choice = 0;
+            String listAnswer;
 
             switch (raceChoice) {
                 case 1:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + dwarvenName.createMaleName() + " " + dwarvenName.createClanName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + dwarvenName.createFemaleName() + " " + dwarvenName.createClanName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + dwarvenName.createMaleName());
                         System.out.println("Clan name: " + dwarvenName.createClanName());
                     } else if (choice == 2) {
@@ -47,7 +59,17 @@ public class Main {
                 case 2:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + elvishName.createMaleName() + " " + elvishName.createFamilyName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + elvishName.createFemaleName() + " " + elvishName.createFamilyName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + elvishName.createMaleName());
                         System.out.println("Family name: " + elvishName.createFamilyName());
                     } else if (choice == 2) {
@@ -60,7 +82,17 @@ public class Main {
                 case 3:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + halflingName.createMaleName() + " " + halflingName.createFamilyName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + halflingName.createFemaleName() + " " + halflingName.createFamilyName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + halflingName.createMaleName());
                         System.out.println("Family name: " + halflingName.createFamilyName());
                     } else if (choice == 2) {
@@ -73,7 +105,17 @@ public class Main {
                 case 4:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + dragonbornName.createMaleName() + " " + dragonbornName.createClanName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + dragonbornName.createFemaleName() + " " + dragonbornName.createClanName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + dragonbornName.createMaleName());
                         System.out.println("Clan name: " + dragonbornName.createClanName());
                     } else if (choice == 2) {
@@ -86,7 +128,17 @@ public class Main {
                 case 5:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + gnomeName.createMaleName() + " " + gnomeName.createClanName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + gnomeName.createFemaleName() + " " + gnomeName.createClanName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + gnomeName.createMaleName());
                         System.out.println("Clan name: " + gnomeName.createClanName());
                     } else if (choice == 2) {
@@ -99,7 +151,17 @@ public class Main {
                 case 6:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + halfOrcName.createMaleName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + halfOrcName.createFemaleName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + halfOrcName.createMaleName());
                     } else if (choice == 2) {
                         System.out.println("First name: " + halfOrcName.createFemaleName());
@@ -110,7 +172,17 @@ public class Main {
                 case 7:
                     System.out.print("Male (1) or Female (2): ");
                     choice = kb.nextInt();
-                    if (choice == 1) {
+                    System.out.print("List of 10 Y or N: ");
+                    listAnswer = kb.next();
+                    if (choice == 1 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + tieflingName.createMaleName());
+                        }
+                    } else if (choice == 2 && listAnswer.equalsIgnoreCase("Y")) {
+                        for(int i = 0; i <= 9; i++) {
+                            System.out.println("Name # " + i + ": " + tieflingName.createFemaleName());
+                        }
+                    } else if (choice == 1) {
                         System.out.println("First name: " + tieflingName.createMaleName());
                     } else if (choice == 2) {
                         System.out.println("First name: " + tieflingName.createFemaleName());

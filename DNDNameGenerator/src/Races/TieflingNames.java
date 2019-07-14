@@ -15,56 +15,42 @@ public class TieflingNames {
         //Pick first name
         int random = (int)(Math.random() * maleNames.length + 1);
         String randomName = maleNames[random-1];
-        //get middle of name
-        int third = (int)(randomName.length()/3);
 
-        String firstThird = randomName.substring(0, third);
+        //get middle of name
+        int half = (int)(randomName.length()/2);
+
+        String firstHalf = randomName.substring(0, half);
 
         //Pick second name
         random = (int)(Math.random() * maleNames.length + 1);
         randomName = maleNames[random-1];
 
-        third = (int)(randomName.length()/3);
+        half = (int)(randomName.length()/2);
 
-        String secondThird = randomName.substring(third);
+        String secondHalf = randomName.substring(half);
 
-        //Pick third name
-        random = (int)(Math.random() * maleNames.length + 1);
-        randomName = maleNames[random-1];
-
-        third = (int)(randomName.length()/3);
-
-        String thirdThird = randomName.substring(third);
-
-        return createdFirstName = firstThird + secondThird + thirdThird;
+        return createdFirstName = firstHalf + secondHalf;
     }
 
     public String createFemaleName(){
         //Pick first name
         int random = (int)(Math.random() * femaleNames.length + 1);
         String randomName = femaleNames[random-1];
-        //get middle of name
-        int third = (int)(randomName.length()/3);
 
-        String firstThird = randomName.substring(0, third);
+        //get middle of name
+        int half = (int)(randomName.length()/2);
+
+        String firstHalf = randomName.substring(0, half);
 
         //Pick second name
         random = (int)(Math.random() * femaleNames.length + 1);
         randomName = femaleNames[random-1];
 
-        third = (int)(randomName.length()/3);
+        half = (int)(randomName.length()/2);
 
-        String secondThird = randomName.substring(third);
+        String secondHalf = randomName.substring(half);
 
-        //Pick third name
-        random = (int)(Math.random() * femaleNames.length + 1);
-        randomName = femaleNames[random-1];
-
-        third = (int)(randomName.length()/3);
-
-        String thirdThird = randomName.substring(third);
-
-        return createdFirstName = firstThird + secondThird + thirdThird;
+        return createdFirstName = firstHalf + secondHalf;
     }
 
 
